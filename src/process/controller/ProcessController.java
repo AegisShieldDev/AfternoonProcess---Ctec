@@ -3,6 +3,7 @@ package process.controller;
 import process.model.PlayDohCircle;
 import process.model.PlayDohSnake;
 import process.model.PlayDohPoly;
+import java.util.Scanner;
 
 public class ProcessController
 {
@@ -10,6 +11,18 @@ public class ProcessController
 	public void start()
 	{
 		System.out.println("Welcome to practice!");
+		
+		/////
+		//Circle
+		/////
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("How big of a circle do you want?");
+		int circleSize = myScanner.nextInt();
+		
+		System.out.println("Look, You made a Circle");
+		
+		PlayDohCircle customCircle = new PlayDohCircle(circleSize);
+		System.out.println(customCircle);
 		
 		System.out.println("Look, I made a Circle");
 		
