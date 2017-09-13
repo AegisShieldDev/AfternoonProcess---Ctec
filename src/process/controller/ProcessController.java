@@ -13,8 +13,9 @@ public class ProcessController
 		System.out.println("Welcome to practice!");
 		
 		/////
-		//Circle
+		//Custom Circle
 		/////
+		
 		Scanner myScanner = new Scanner(System.in);
 		System.out.println("How big of a circle do you want?");
 		int circleSize = myScanner.nextInt();
@@ -23,6 +24,10 @@ public class ProcessController
 		
 		PlayDohCircle customCircle = new PlayDohCircle(circleSize);
 		System.out.println(customCircle);
+		
+		/////
+		//Circle
+		/////
 		
 		System.out.println("Look, I made a Circle");
 		
