@@ -25,6 +25,12 @@ public class ProcessController
 		PlayDohCircle customCircle = new PlayDohCircle(circleSize);
 		System.out.println(customCircle);
 		
+		System.out.println("What size should we change the circle to?");
+		int updated = myScanner.nextInt();
+		customCircle.setSize(updated);
+		System.out.println("The circle now is....");
+		System.out.println(customCircle);
+		
 		/////
 		//Circle
 		/////
